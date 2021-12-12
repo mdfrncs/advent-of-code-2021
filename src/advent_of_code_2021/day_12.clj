@@ -6,7 +6,7 @@
 
 (defn parse-line
   [line]
-  (rest (re-matches #"([a-zA-Z+]+)-([a-zA-Z+]+)" line)))
+  (rest (re-matches #"([a-zA-Z]+)-([a-zA-Z]+)" line)))
 
 
 (defn input
