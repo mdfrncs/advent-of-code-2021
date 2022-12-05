@@ -5,5 +5,6 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.3"]
                  [cheshire "5.10.1"]
-                 [org.clojure/core.async "1.5.644"]]
+                 [org.clojure/core.async "1.5.644"]
+                 [org.clojure/data.csv "1.0.1"]]
   :repl-options {:init-ns advent-of-code-2021.core})
