@@ -6,8 +6,7 @@
   (->> (slurp "resources/2022/day_6")
        (map identity)))
 
-(defn solve [size]
-  (let [input (input)]
+(defn solve [input size]
   (->> (range size)
        ;; generate n, n-1 to n-size char lists from input
        (map #(drop % input))
@@ -21,10 +20,10 @@
        ;; unwrap index
        first
        ;; first set is actually at index size
-       (+ size))))
+       (+ size)))
 
 (defn pt1 []
-  (solve 4))
+  (solve (input) 4))
 
 (defn pt2 []
-  (solve 14))
+  (solve (input) 14))
